@@ -24,8 +24,8 @@ user = api.me()
 name = "piku tag on!"
 
 #ava buka
-avabuka = "/img/open.png"
-avatutup = "/img/closed.png"
+avabuka = "piku-bot/img/open.png"
+avatutup = "piku-bot/img/closed.png"
 
 # updating the background picture
 api.update_profile(name)
@@ -46,10 +46,10 @@ class Listener(StreamListener):
 
         
         # Upload images and get media_ids
-        filenames = ['/img/1.png', 
-                     '/img/2.png', 
-                    '/img/3.png',
-                    '/img/4.png']
+        filenames = ['piku-bot/img/1.png', 
+                     'piku-bot/img/2.png', 
+                    'piku-bot/img/3.png',
+                    'piku-bot/img/4.png']
         media_ids = []
         
         for filename in filenames:
