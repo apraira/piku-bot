@@ -6,7 +6,7 @@ from os import environ
 import tweepy
 import random
 
-#testing
+#tes
 #sekarang lagi make piku
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
