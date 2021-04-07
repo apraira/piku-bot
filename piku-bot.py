@@ -2,9 +2,11 @@
 from tweepy import (Stream, OAuthHandler)
 from tweepy.streaming import StreamListener
 import time
+from os import environ
 import tweepy
 import random
 
+#testing
 #sekarang lagi make piku
 CONSUMER_KEY = environ['CONSUMER_KEY']
 CONSUMER_SECRET = environ['CONSUMER_SECRET']
