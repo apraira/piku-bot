@@ -63,16 +63,16 @@ class Listener(StreamListener):
         link = ''
         #" " + '\n\n' + emolink + ":https://twitter.com/pikuupa/status/1373587658748870658?s=19"
         
-        kata2 = ["haloo kak "+ username + " lagi nyari layout? pas banget nih kak, di @pikuupa ada yang gemes-gemes sampai yang classy! yuk cek duluu",
+        kata2 = ["haloo kak "+ username + ", pas banget nih kak, di @pikuupa ada yang gemes-gemes sampai yang classy! yuk cek duluu",
                 "haai kak "+ username+", kakak lagi nyari layout ya? @pikuupa lagi open layout nih, pengerjaannya 1-3 hari ajaa, bisa dicariin juga fotonya, yuk kak cek duluu @pikuupa",
                 "kalo cari layout kesini aja kaak "+ username+ ", ada layout gemes sampai yang manly!yuk ditunggu ya kaak dmnya di @pikuupa",
                 "kak "+ username +", cek dulu yuuk siapa tau jodooh hehee! @pikuupa",
                 "halooo kaaak " +username +", @pikuupa lagi open loh! tanpa batasan slot, yuk kajja order? bisa diliat dulu nih kaak",
                 "di @pikuupa semua ada kaak " +username+ ", dari yang lucu, sampai yang classy, yuk diorderr <3",
-                "kak "+ username+" cari layout? ke @pikuupa aja yuuk, lagi opeeen, diliat dulu aja kak siapa tau sukaa",
+                "kak "+ username +" cari layout? ke @pikuupa aja yuuk, lagi opeeen, diliat dulu aja kak siapa tau sukaa",
                 "haai kak "+ username + " , jajan di @pikuupa yuk! dari yang gemes sampai yang classy ada semua, lengkapnya cek pinned yaaa",
-                "halo kaak " + username + "beli layout di @pikuupa yuk! lagi open nih hehe! cek dulu katalognya siapa tau sukaa, lengkapnya ada di pinned @pikuupa yaa",
-                "eh ada kak " + username + " yuk jajan di @pikuupa, mau layout gemes/handraw/classy ada semua kok, diliat dulu aja kaak, lengkapnya ada di pinned yaa, ditunggu hehee"]
+                "halo kaak " + username + ", beli layout di @pikuupa yuk! lagi open nih hehe! cek dulu katalognya siapa tau sukaa, lengkapnya ada di pinned @pikuupa yaa",
+                "misiii kak " + username + ", yuk jajan di @pikuupa, mau layout gemes/handraw/classy/dark ada semua kok, diliat dulu aja kaak, lengkapnya ada di pinned @pikuupa yaa, ditunggu hehee"]
         
         #cek pikupa buka apa engga
         
