@@ -135,7 +135,7 @@ class Listener(StreamListener):
                     print('mulai lagii :3')
                     # updating the background picture
                     api.update_profile(name)
-                    listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout', 'leot drop katalog','tawarin leyot', 'tawarin leot', 'wtb leot', 'wtb layout', 'wtb leyot'])  
+                    break  
                 
         else:
             print ("PIKU CLOSED")                
