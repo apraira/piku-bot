@@ -156,7 +156,7 @@ class Listener(StreamListener):
             auth = self.login()
             streaming_api = Stream(auth, Listener(), timeout=60)
             # Atlanta area.
-            streaming_api.filter(track=hashtag, stall_warnings=True)
+            streaming_api.filter(track=hashtag,async=True,stall_warnings=True)
         except KeyboardInterrupt:
             print('Got keyboard interrupt')
 
