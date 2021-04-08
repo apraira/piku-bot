@@ -104,6 +104,15 @@ class Listener(StreamListener):
             
             elif 'anitwt' in (status.text).lower():
                 print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
+
+            elif 'jadi hari ini' in (status.text).lower():
+                print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
+
+            elif 'couple' in (status.text).lower():
+                print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
+            
+            elif 'cp' in (status.text).lower():
+                print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
                 
             #ketika status tuh bukan dalam bentuk quote jalanin ini
             else:
