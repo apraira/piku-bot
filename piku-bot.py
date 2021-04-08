@@ -135,7 +135,7 @@ class Listener(StreamListener):
                     print('mulai lagii :3')
                     # updating the background picture
                     api.update_profile(name)
-                    Listener.terminate()
+                    print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
                 
         else:
             print ("PIKU CLOSED")                
