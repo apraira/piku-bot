@@ -129,7 +129,9 @@ class Listener(StreamListener):
                     print('istirahat dulu 1 jaaam')
                     name = "Istirahat"
                     api.update_profile(name)
+                    Listener.wait()
                     time.sleep(3600)
+                    Listener.notify()
                     # the profile name to be updated
                     name = "piku tag on!"
                     print('mulai lagii :3')
