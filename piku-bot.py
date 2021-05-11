@@ -63,21 +63,21 @@ class Listener(StreamListener):
         link = ''
         #" " + '\n\n' + emolink + ":https://twitter.com/pikuupa/status/1373587658748870658?s=19"
         
-        kata2 = ["haloo kak "+ username + ", pas banget nih kak, di @pikuupa ada yang gemes-gemes sampai yang classy! yuk cek duluu",
-                "haai kak "+ username+", kakak lagi nyari layout ya? @pikuupa lagi open layout nih, pengerjaannya 1-3 hari ajaa, bisa dicariin juga fotonya, yuk kak cek duluu @pikuupa",
-                "kalo cari layout kesini aja kaak "+ username+ ", ada layout gemes sampai yang manly!yuk ditunggu ya kaak dmnya di @pikuupa",
-                "kak "+ username +", cek dulu yuuk siapa tau jodooh hehee! @pikuupa",
-                "halooo kaaak " +username +", @pikuupa lagi open loh! tanpa batasan slot, yuk kajja order? bisa diliat dulu nih kaak",
-                "di @pikuupa semua ada kaak " +username+ ", dari yang lucu, sampai yang classy, yuk diorderr <3",
-                "kak "+ username +" cari layout? ke @pikuupa aja yuuk, lagi opeeen, diliat dulu aja kak siapa tau sukaa",
-                "haai kak "+ username + " , jajan di @pikuupa yuk! dari yang gemes sampai yang classy ada semua, lengkapnya cek pinned yaaa",
-                "halo kaak " + username + ", beli layout di @pikuupa yuk! lagi open nih hehe! cek dulu katalognya siapa tau sukaa, lengkapnya ada di pinned @pikuupa yaa",
-                "misiii kak " + username + ", yuk jajan di @pikuupa, mau layout gemes/handraw/classy/dark ada semua kok, diliat dulu aja kaak, lengkapnya ada di pinned @pikuupa yaa, ditunggu hehee"]
+        kata2 = ["haloo kak pas banget nih kak, di @pikupaw ada yang gemes-gemes sampai yang dark! yuk cek duluu",
+                "haai kak , kakak lagi nyari layout ya? @pikupaw lagi open layout nih, pengerjaannya 1-3 hari ajaa, bisa dicariin juga fotonya, yuk kak cek duluu di @pikupaw",
+                "kalo cari layout kesini aja kaak, ada layout gemes sampai yang dark! yuk ditunggu ya kaak dmnya di @pikupaw,
+                "eh kaak, cek dulu yuuk siapa tau jodooh hehee! @pikupaw",
+                "halooo kaaak @pikupaw lagi open loh! tanpa batasan slot, yuk kajja order? bisa diliat dulu nih kaak",
+                "di @pikupaw semua ada kaak, dari yang lucu, sampai yang classy atau dark, yuk diorderr <3",
+                "kak, cari layout? ke @pikupaw aja yuuk, lagi opeeen, diliat dulu aja kak siapa tau sukaa",
+                "haai kak, jajan di @pikupaw yuk! dari yang gemes sampai yang dark ada semua, lengkapnya cek link di bio @pikupaw yaaa",
+                "halo kaak, beli layout di @pikupaw yuk! lagi open nih hehe! cek dulu katalognya siapa tau sukaa, lengkapnya ada di pinned @pikupaw yaa",
+                "misiii kak, yuk jajan di @pikupaw, mau layout gemes/handraw/classy/dark ada semua kok, diliat dulu aja kaak, lengkapnya ada di link bio @pikupaw yaa, ditunggu hehee"]
         
         #cek pikupa buka apa engga
         
         # the ID of @pikuupa
-        idpiku = '4658987426'
+        idpiku = '1385032698993905664'
         # fetching the user
         user = api.get_user(idpiku)
         # fetching the screen name
@@ -87,7 +87,6 @@ class Listener(StreamListener):
         
         if 'open' in dnpiku.lower():
             print ("pikupa open")
-            api.update_profile_image(avabuka)
             #ketika status tuh dalam bentuk quote, di skip
             if status.is_quote_status is True:
                 print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
@@ -131,19 +130,18 @@ class Listener(StreamListener):
                     api.update_profile(name)
                     time.sleep(3600)
                     # the profile name to be updated
-                    name = "piku tag on!"
+                    name = "Arkean."
                     print('mulai lagii :3')
                     # updating the background picture
                     api.update_profile(name)
                     Listener.terminate()
                 
         else:
-            print ("PIKU CLOSED")                
+            print ("PIKU is CLOSED")                
             # the profile name to be updated
-            name = "pikoe"  
+            name = "Arkean."  
             # updating the background picture
             api.update_profile(name)
-            api.update_profile_image(avatutup)
         
 
 
