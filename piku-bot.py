@@ -94,6 +94,9 @@ class Listener(StreamListener):
                 
             elif 'anime' in (status.text).lower():
                 print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
+            
+            elif 'rt @' in (status.text).lower():
+                print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
                 
     
             elif 'scenery' in (status.text).lower():
