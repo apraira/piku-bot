@@ -9,4 +9,4 @@ a bot developed by myself to promote my business on twitter
 4. change display name when the bot is resting
 
 ## future
-1. report how many tweet that has been replied for a day.
+1. report how many tweet that has been replied for a day...
