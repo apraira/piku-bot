@@ -1,1 +1,1 @@
-clock: python piku-bot.py
+worker: python piku-bot.py
