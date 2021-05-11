@@ -36,7 +36,7 @@ print (user.name)
 
 sched = BlockingScheduler()
 
-@sched.scheduled_job('interval', minutes=1)
+@sched.scheduled_job('interval', minutes=40)
 
 def timed_job():
     print('This job is run every three minutes.')
