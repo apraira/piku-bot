@@ -128,13 +128,15 @@ class Listener(StreamListener):
                     print('istirahat dulu 1 jaaam')
                     name = "Istirahat"
                     api.update_profile(name)
+                    Listener.wait()
                     time.sleep(3600)
+                    Listener.notify()
                     # the profile name to be updated
                     name = "Arkean."
                     print('mulai lagii :3')
                     # updating the background picture
                     api.update_profile(name)
-                    Listener.terminate()
+                    print("> " + status.user.screen_name + ": " + status.text + " ( skipped )")
                 
         else:
             print ("PIKU is CLOSED")                
@@ -154,7 +156,7 @@ class Listener(StreamListener):
             auth = self.login()
             streaming_api = Stream(auth, Listener(), timeout=60)
             # Atlanta area.
-            streaming_api.filter(track=hashtag, stall_warnings=True)
+            streaming_api.filter(track=hashtag, is_async=True, stall_warnings=True)
         except KeyboardInterrupt:
             print('Got keyboard interrupt')
 
