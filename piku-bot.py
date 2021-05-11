@@ -65,7 +65,7 @@ class Listener(StreamListener):
         
         kata2 = ["haloo kak pas banget nih kak, di @pikupaw ada yang gemes-gemes sampai yang dark! yuk cek duluu",
                 "haai kak , kakak lagi nyari layout ya? @pikupaw lagi open layout nih, pengerjaannya 1-3 hari ajaa, bisa dicariin juga fotonya, yuk kak cek duluu di @pikupaw",
-                "kalo cari layout kesini aja kaak, ada layout gemes sampai yang dark! yuk ditunggu ya kaak dmnya di @pikupaw,
+                "kalo cari layout kesini aja kaak, ada layout gemes sampai yang dark! yuk ditunggu ya kaak dmnya di @pikupaw",
                 "eh kaak, cek dulu yuuk siapa tau jodooh hehee! @pikupaw",
                 "halooo kaaak @pikupaw lagi open loh! tanpa batasan slot, yuk kajja order? bisa diliat dulu nih kaak",
                 "di @pikupaw semua ada kaak, dari yang lucu, sampai yang classy atau dark, yuk diorderr <3",
