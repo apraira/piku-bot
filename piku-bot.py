@@ -128,9 +128,8 @@ class Listener(StreamListener):
                     print('istirahat dulu 1 jaaam')
                     name = "Istirahat"
                     api.update_profile(name)
-                    Listener.wait()
                     time.sleep(3600)
-                    Listener.notify()
+                    listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout', 'leot drop katalog','tawarin leyot', 'tawarin leot', 'wtb leot', 'wtb layout', 'wtb leyot'])
                     # the profile name to be updated
                     name = "Arkean."
                     print('mulai lagii :3')
