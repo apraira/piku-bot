@@ -156,11 +156,9 @@ def timed_job():
                 # the profile name to be updated
                 name = "Arkean."  
                 # updating the background picture
-                api.update_profile(name)
-            
+                api.update_profile(name)         
 
-
-        
+     
 
 
         def getTweetsByHashtag(self, stop_at_number, hashtag):
@@ -173,8 +171,8 @@ def timed_job():
             except KeyboardInterrupt:
                 print('Got keyboard interrupt')
 
-        listener = Listener()
-        listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout', 'leot drop katalog','tawarin leyot', 'tawarin leot', 'wtb leot', 'wtb layout', 'wtb leyot'])
+            listener = Listener()
+            listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout', 'leot drop katalog','tawarin leyot', 'tawarin leot', 'wtb leot', 'wtb layout', 'wtb leyot'])
 
 
 
