@@ -168,8 +168,8 @@ class Listener(StreamListener):
                     track=hashtag, is_async=True, stall_warnings=True)
             except KeyboardInterrupt:
                 print('Got keyboard interrupt')
-                
 
-    listener = Listener()
-    listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout',
+
+listener = Listener()
+listener.getTweetsByHashtag(6, ['layout drop katalog', 'leyot drop katalog', 'tawarin layout',
                                             'leot drop katalog', 'tawarin leyot', 'tawarin leot', 'wtb leot', 'wtb layout', 'wtb leyot'])
