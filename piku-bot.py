@@ -158,16 +158,16 @@ class Listener(StreamListener):
                 # updating the background picture
             api.update_profile(name)
 
-        def getTweetsByHashtag(self, stop_at_number, hashtag):
-            try:
-                Listener.stopAt = stop_at_number
-                auth = self.login()
-                streaming_api = Stream(auth, Listener(), timeout=60)
+    def getTweetsByHashtag(self, stop_at_number, hashtag):
+        try:
+            Listener.stopAt = stop_at_number
+            auth = self.login()
+            streaming_api = Stream(auth, Listener(), timeout=60)
                 # Atlanta area.
-                streaming_api.filter(
-                    track=hashtag, is_async=True, stall_warnings=True)
-            except KeyboardInterrupt:
-                print('Got keyboard interrupt')
+            streaming_api.filter(
+            track=hashtag, is_async=True, stall_warnings=True)
+        except KeyboardInterrupt:
+            print('Got keyboard interrupt')
 
 
 listener = Listener()
