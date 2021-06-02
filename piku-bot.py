@@ -79,9 +79,7 @@ class Listener(StreamListener):
             #cek pikupa buka apa engga
 
             # the ID of @pikuupa
-        idpiku = '1385032698993905664'
-            # fetching the user
-        user = api.get_user(idpiku)
+        
             # fetching the screen name
         dnpiku = 'open'
 
