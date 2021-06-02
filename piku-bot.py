@@ -83,7 +83,7 @@ class Listener(StreamListener):
             # fetching the user
         user = api.get_user(idpiku)
             # fetching the screen name
-        dnpiku = user.name
+        dnpiku = 'open'
 
         if 'open' in dnpiku.lower():
             print("pikupa open")
